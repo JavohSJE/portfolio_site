@@ -1,0 +1,209 @@
+
+/* Asosiy class lar */
+.continer{
+    width: 1140px;
+    margin: 0 auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0px;
+}
+.to-uppercase{
+    text-transform: uppercase;
+}
+.clearfix{
+    clear: both;
+}
+
+
+.section-subtitle{
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 0.625rem; 
+    /*  10px  10 / 16= 0.625rem  remga otish ham  shu tartibda boladi  */
+    color: #797979;
+    text-transform: uppercase;
+    display: inline-block;
+    
+}
+.section-title{
+    font-size: 2.62rem;
+    margin-top: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1.88rem;
+    color: #05364d;
+    text-transform: capitalize;
+}
+.about-me__description{
+    font-size: 0.87rem;
+    font-weight: 300;
+     color:#797979 ;
+     line-height: 27px;
+}
+
+ .button{
+    width: 200px;
+    height: 60px;
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: #9ea9af;
+    background-image: linear-gradient(to right bottom,red,blue);
+    background-size: 200px auto;
+    border-radius: 10px;
+    padding: 1.25rem 1.25rem;
+   cursor: pointer;
+   transition: all 0.4s;
+   
+ }
+
+
+ .button:hover{
+    background-image: linear-gradient(to right bottom, blue,red);
+  
+ }
+
+ .about-me__action{
+    margin-top: 3.125rem;
+ }
+
+ .blur-line{
+    margin-left: 5px;
+    width: 80px;
+    height: 4px;
+    background-color: rgba(237, 35, 159,0.6);
+    filter: blur(4px);
+    border-radius: 4px;
+ }
+
+
+
+/* main header  stayle */
+.main-banner{
+    background-image: url(image/background_fon-removebg-preview.png);
+    background-position:center;
+    background-size: cover;
+    min-height: 890px;
+    border-radius: 20%;
+}
+.main-header{
+    position: fixed;
+    background-color: #f8faff;
+    width: 100%;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 / 10%);
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+}
+
+.main-header .continer{
+    display: flex;
+    align-items: center;
+}
+.main-header__brand img{
+    width: 64px;   
+}
+
+.main-navigation__item{
+    display: inline-block;
+    padding: 0.9375rem; 
+}
+
+.main-navigation__item a{
+    text-decoration: none;
+    color: rgb(221, 179, 116);
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-weight: bolder;
+}
+
+.main-navigation__item a:hover{
+    color:rgb(187, 129, 168);
+}
+.main-navigation__item a.active{
+    color:rgb(187, 129, 168);
+}
+
+/* Footer section stayle */
+
+.footer{
+    padding: 50px 0;
+    margin-top: 50px;
+    background-color:#021017;
+    text-align: center;
+}
+
+.footer__brand img{
+    width: 128px;
+}
+
+.footer__navigation-item{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.footer__navigation-item a{
+    color: #f8faff;
+    text-decoration: none;
+}
+
+.footer__social{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #f8faff;
+    border-radius: 36px;
+    font-size: 16px;
+    margin-right: 12px;
+  
+}
+.footer__social:hover{
+    
+   background-image: linear-gradient( to right bottom,blue,red );
+   color: #f8faff;
+  
+}
+.footer__social:hover a{
+    
+    color: #797979;
+   
+ }
+.footer__social a{
+    color:#05364d;  
+}
+.footer__text{
+    color: #797979;
+}
+
+@media only  screen and (max-width:767px)  {
+    .main-navigation{
+        display: none;  
+    }
+    .continer{
+        width: 96%;
+    }
+    .main-banner{
+        background: none;
+        min-height: auto;
+    }
+    .main-section__button{
+        display: none;
+    }
+
+}
+
+
+/* transition */
+a{
+    transition: all 0.4s ease-in-out;
+}
+button{
+    font-family: inherit;
+    transition: all 0.4s ease-in-out;
+}
